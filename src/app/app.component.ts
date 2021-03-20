@@ -30,6 +30,10 @@ export class AppComponent  {
     console.log('check out', event.target)
   }
 
+  onProperty(event) {
+    console.log(event.target.innerText + " clicked");
+  }
+
   titleHover() {
     console.log('hovered the title');
   }

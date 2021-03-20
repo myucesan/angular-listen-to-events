@@ -6,10 +6,10 @@
   <dl class="row">
 
     <dt class="col-sm-6">Year Released</dt>
-    <dd class="col-sm-6">{{favFlop.yearReleased}}</dd>
+    <dd (click)="onProperty($event)" ss="col-sm-6">{{favFlop.yearReleased}}</dd>
 
     <dt class="col-sm-6">Rating</dt>
-    <dd class="col-sm-6">{{favFlop.rating}}</dd>
+    <dd (click)="onProperty($event)" class="col-sm-6">{{favFlop.rating}}</dd>
 
     <dd class="col-sm-6"><a [href]="favFlop.imdbLink">IMDB Link</a></dd>
     <dd class="col-sm-6"></dd>
