@@ -1,0 +1,27 @@
+
+<div class="jumbotron bg-dark text-light">
+  <h2 (mouseover)="titleHover()">{{favFlop.title}}</h2>
+  <hr class="my-4">
+
+  <dl class="row">
+
+    <dt class="col-sm-6">Year Released</dt>
+    <dd class="col-sm-6">{{favFlop.yearReleased}}</dd>
+
+    <dt class="col-sm-6">Rating</dt>
+    <dd class="col-sm-6">{{favFlop.rating}}</dd>
+
+    <dd class="col-sm-6"><a [href]="favFlop.imdbLink">IMDB Link</a></dd>
+    <dd class="col-sm-6"></dd>
+
+    <dd class="col-sm-6"><a [href]="favFlop.soundtrack?.spotifyLink">Soundtrack</a></dd>
+    <dd class="col-sm-6"></dd>
+
+  </dl>
+
+  <button 
+    (click)="onCheckout($event)"
+    class="btn btn-primary">Check Out</button>
+
+</div>
+
